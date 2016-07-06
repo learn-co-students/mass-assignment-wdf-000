@@ -4,7 +4,7 @@ class Person
   :wrist_size, :glove_size, :pant_length, :pant_width
 
   def initialize(attributes_hash)
-    # sends each value to the appropriate attr_accessor
+    # sends each value to the matching attr_accessor
     attributes_hash.each { |key, value| self.send("#{key}=", value) }
   end
 end
